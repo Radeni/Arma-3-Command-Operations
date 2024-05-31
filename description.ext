@@ -1,0 +1,148 @@
+
+#include "scripts\GOM\dialogs\GOM_dialog_parents.hpp"
+#include "scripts\GOM\dialogs\GOM_dialog_controls.hpp"
+#include "GUI\MissionSelectGui.hpp"
+#include "GUI\ChooseFaction.hpp"
+#include "VVS\menu.h"
+#include "VAM_GUI\defines.hpp"
+#include "VAM_GUI\VAM_GUI_controls.hpp"
+#include "VAM_GUI\VAM_GUI_classes.hpp"
+class CfgFunctions
+{
+	#include "scripts\GOM\functions\GOM_fnc_functions.hpp"
+	#include "VVS\Functions.h"
+	class CO
+	{
+		class GUI
+		{
+			file = "functions\gui";
+			class missionGiversGui {};
+		};
+		class spawning
+		{
+			file = "functions\spawning";
+			class enemyAssault {};
+			class reinforcements {};
+			class createMarker {};
+			class garrisonBuilding {};
+			class garrisonArrows {};
+			class waveMaster {};
+			class selectTown {};
+			class spawnComposition {};
+			class spawnMen {};
+			class spawnVehicles {};
+			class spawnAircraft {};
+			class objectsGrabber {};
+			class getBuildingAttachments {};
+			class makeBuildingAttachments {};
+			class makeCacheAttachments {};
+			class reconCamp {};
+			class fobBase {};
+			class findHouse {};
+		};
+		class ambience
+		{
+			file = "functions\ambience";
+			class smokeStack {};
+			class ambientUnits {};
+			class ambientVehicles {};
+			class ambientCleanup {};
+			class ambientVehCleanup {};
+			class ambientReset {};
+		};
+		class math
+		{
+			file = "functions\math";
+			class actualVectorDotProduct {};
+		};
+		class actions
+		{
+			file = "functions\actions";
+			class leadAI {};
+			class pilotRevive {};
+			class stopLeadAI {};
+			class missionGivers {};
+			class spawnMission{};
+		};
+		class tasks
+		{
+			file = "functions\tasks";
+			class taskCreator {};
+			class isAreaClear {};
+			class defendFinisher {};
+			class nearestPlayer {};
+			class nearPlayers {};
+			class cleanup {};
+			class objectSafeCleanup {};
+		};
+		class missions
+		{
+			file = "functions\missions";
+			class townClear {};
+			class townDefend {};
+			class sabotageCache {};
+			class reconSabotage {};
+			class reconSabotageArty {};
+			class reconRescue {};
+			class reconAntirecon {};
+			class sfHostageRescue {};
+			class recoverIntelSF {};
+			
+		};
+	};
+};
+class CfgCommunicationMenu {
+#include "scripts\GOM\functions\GOM_fnc_aircraftLoadoutMenu.hpp"
+};
+
+class CfgRemoteExec
+{
+	class Functions
+	{
+		mode = 2;
+		jip = 1;
+	};
+};
+class Params
+{
+	class Daytime
+	{
+		title = "Starting time";
+		texts[] = {"Morning","Noon","Evening","Midnight"};
+		values[] = {6,12,18,0};
+		default = 6;
+		function = "BIS_fnc_paramDaytime";
+	};
+	class Timespeed
+	{
+		title = "Time speed multiplier (1X Means 1 hour IRL is 1 hour ingame.";
+		texts[] = {"1X","2X","3X","4X","5X","6X","7X","8X","9X","10X","15X","20X","24X"};
+		values[] = {1,2,3,4,5,6,7,8,9,10,15,20,24};
+		default = 4;
+		function = "BIS_fnc_paramTimeAcceleration";
+	};
+	class Ambience
+	{
+		title = "Enable ambience system";
+		texts[] = {"Yes","No"};
+		values[] = {1,0};
+		default = 1;
+	};
+	class AmbientVehicles
+	{
+		title = "Max. Ambient vehicle amount (per player)";
+		texts[] = {"1X","2X","3X","4X","5X","6X","7X","8X","9X","10X"};
+		values[] = {1,2,3,4,5,6,7,8,9,10};
+		default = 3;
+	};
+	class AmbientUnits
+	{
+		title = "Max. Ambient squads amount (per player)";
+		texts[] = {"1X","2X","3X","4X","5X","6X","7X","8X","9X","10X"};
+		values[] = {1,2,3,4,5,6,7,8,9,10};
+		default = 3;
+	};
+};
+enableDebugConsole = 2;
+allowFunctionsRecompile = 1;
+saving = 0;

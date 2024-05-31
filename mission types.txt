@@ -1,0 +1,55 @@
+-Infantry:
+	-Hostile takeover (Clear town) + Command hq?
+	-Sabotage (Supply cache)
+	-Defend town (conventional)
+	-Defend ally (Idap/friendly from guerrilla/recon)
+-Airforce:
+	-Troop transport
+	-Supply transport (Helicopter)
+	-Air superiority (Destroy enemy aircraft)
+	-Ground support (Destroy attacking ground vehicles)
+-Recon:
+	-Sabotage (Enemy LRAA/LRArty/FOB)
+	-UAV Data
+	-Patrol
+	-Search and rescue
+	-Anti recon
+-Logistics:
+	-Missing supply crate
+	-Supply transprt (Drive vehicle to random location)
+-Special forces:
+	-Hostage rescue
+	-Assassination (At FOB, in town or in convoy).
+	-Snatch and grab
+	-Intel recovery (From enemy).
+	-Convoy interception
+	-Underwater recovery
+	-Underwater EOD
+	-Anti-Piracy.
+	-Steal Prototype Technology (Vehicle)
+Ultimate Deployment:
+	-Limited tickets.
+	-Respawn in waves.
+	-Option to save tickets and some of the progress.
+	-Base Progression:
+		Acquiring vendors trough specific missions.
+		Base building (fortifications)
+		Unlocking supports
+		Unlocking aircrafts (on carrier)
+		Arsenal gear tiers.
+		Ordering gear to unlock it: creates a supply recovery mission.
+	
+	
+Operations: 
+	-stared trough a special menu
+	-require 3-5 pieces of actionable intel
+	-Main objective (Takeover,Defense,Pilot rescue,Assassination, Enemy FOB.)
+	
+-Stronghold/Safehouse raids
+		-strongholds contain intel (Actionable or encrypted)
+		-can contain one or more mini objectives for score(Hostage/Cache/Officer)
+	
+	
+-Enemies (Team Leaders) in recon missions can drop intel (phone, tablet, document). Picking it up narrows the search area
+-
+	

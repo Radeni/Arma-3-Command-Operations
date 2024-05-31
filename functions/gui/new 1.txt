@@ -1,0 +1,35 @@
+/*//_side = switch (lbCurSel (_mainGui displayCtrl 6)) do {case 0:{EAST};case 1:{resistance};};
+		//systemChat str _side;
+		//_factionName = ((_factionGui displayCtrl 3) lbValue (lbCurSel(_factionGui displayCtrl 3)));
+		//systemChat str _factionName;
+		_faction = switch _factionName do
+		{
+			case "CSAT":{"OPF_F"};
+			case "AAF":{"IND_F"};
+			case "Syndikat":{"IND_C_F"};
+		};
+		systemChat _faction;*/
+		_missions = ["CO_fnc_townClear","CO_fnc_townDefend","CO_fnc_sabotageCache","CO_fnc_reconRescue","CO_fnc_reconAntirecon","CO_fnc_reconSabotage","CO_fnc_reconSabotageArty","CO_fnc_recoverIntelSF"];
+		/*_mission = switch ((_mainGui displayCtrl 5) lbValue lbCurSel(_mainGui displayCtrl 5)) do
+		{
+			case "Clear Town":{_missions select 0};
+			case "Defend Town":{_missions select 1};
+			case "Sabotage":{_missions select 2};
+			case "Search and Rescue":{_missions select 3};
+			case "Counter-Recon": {_missions select 4};
+			case "SAM Sabotage":{_missions select 5};
+			case "Artillery FOB Sabotage":{_missions select 6};
+			case "Acquire Intel": {_missions select 7};
+			case "Any Infantry misson":{_missions select (selectRandom [0,1,2])};
+			case "Any Recon misson":{_missions select (selectRandom [3,4,5,6])};
+			case "Any Special misson":{_missions select (selectRandom [7])};
+		};
+		systemChat _mission;
+		[_side,_faction] remoteExec [_mission,2];*/
+		
+		
+		_mainGui = findDisplay 1973;
+		_factionGui = findDisplay 1974;
+		
+		systemChat "This is gay";
+		while{dialog} do {closeDialog 0; sleep 0.03};
