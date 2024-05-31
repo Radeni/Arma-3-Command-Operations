@@ -52,7 +52,7 @@ Feedback and contributions are welcome! Feel free to open issues or pull request
 This project is shared under the Bohemia Interactive APL-SA License.
 
 ## Contact
-For more information or to provide feedback, you can reach me through my Steam profile [Rad](https://steamcommunity.com/id/yoursteamprofile).
+For more information or to provide feedback, you can reach me through my Steam profile [Rad](https://steamcommunity.com/id/radeni).
 
 ---
 
